@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  >
+  
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 1rem; text-align: center; margin-top: 25px; color: hsl(167, 41%, 39%);}
+    .attribution a { color: hsl(167, 40%, 24%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-wrap">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="sunnyside logo">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="" class="btn-contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-btn" onclick="mostraNav()">
+        <img src="images/icon-hamburger.svg" alt="nav btn">
+      </div>
+    </div>
+    <div class="content">
+      <h1>We are creatives</h1>
+      <img src="images/icon-arrow-down.svg" alt="arrow down image" class="animate__animated animate__bounce">
+    </div>
+  </header>
+
+  <main>
+    <section  class="section" id="about">
+        <div class="text">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="" class="transform">Learn more</a>
+      </div>
+      <picture>
+        <source srcset="images/desktop/image-transform.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-transform.jpg" alt="transform">
+       </picture>
+    </section>
+    <section class="section">
+      <picture>
+        <source srcset="images/desktop/image-stand-out.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-stand-out.jpg" alt="stand out">
+       </picture>
+      <div class="text">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="" class="stand">Learn more</a>
+      </div>
+    </section>
+    <section class="section" id="services">
+      <div class="text2">
+        <h3>Graphic design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div class="text2">
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>Client testimonials</h2>
+      <div class="comments">
+        <div class="comment">
+          <img src="images/image-emily.jpg" alt="">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h3>Emily R.</h3>
+          <p><small>Marketing Director</small></p>
+        </div>
+        <div class="comment">
+          <img src="images/image-thomas.jpg" alt="">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h3>Thomas S.</h3>
+          <p><small>Chief Operating Officer</small></p>
+        </div>
+        <div class="comment">
+          <img src="images/image-jennie.jpg" alt="">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h3>Jennie F.</h3>
+          <p><small>Business Owner</small></p>
+        </div>
+      </div>
+    </section>
+    <section class="galery" id="projects">
+      <picture>
+        <source srcset="images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="img">
+       </picture>
+       <picture>
+       <source srcset="images/desktop/image-gallery-orange.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="img">
+       </picture>
+       <picture>
+       <source srcset="images/desktop/image-gallery-cone.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="img">
+       </picture>
+       <picture>
+       <source srcset="images/desktop/image-gallery-sugarcubes.jpg" media="(min-width: 600px)">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="img">
+       </picture>
+    </section>
+  </main>
+  <footer>
+    <div class="logo">
+      <img src="images/logo-footer.svg" alt="">
+    </div>
+    <nav>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="redes-sociais">
+      <a href="">
+        <img src="images/icon-facebook.svg" alt="rede social">
+      </a>
+      <a href="">
+        <img src="images/icon-instagram.svg" alt="rede social">
+      </a>
+      <a href="">
+        <img src="images/icon-twitter.svg" alt="rede social">
+      </a>
+      <a href="">
+        <img src="images/icon-pinterest.svg" alt="rede social">
+      </a>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.instagram.com/danilobezerra.io/">Danilo Bezerra</a>.
+    </p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
